@@ -81,17 +81,21 @@ export const lists = [
 	{
 		id: 1,
 		name: "Now Playing",
+		link: "/",
 	},
 	{
 		id: 2,
 		name: "Popular",
+		link: "/popular",
 	},
 	{
 		id: 3,
 		name: "Top Rated",
+		link: "/top-rated",
 	},
 	{
 		id: 4,
 		name: "Upcoming",
+		link: "/upcoming",
 	},
 ];

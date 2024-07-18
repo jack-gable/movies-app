@@ -1,3 +1,5 @@
+import { lists } from "@/constants";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -6,7 +8,7 @@ const Navbar = () => {
 			<div className="bg-hero bg-center bg-cover bg-no-repeat w-full h-full absolute top-0 left-0 opacity-65"></div>
 			<nav className="flex-1 flex flex-col gap-10 z-[2]">
 				<a href="/">
-					<h1 className="text-white sm:text-6xl text-4xl font-bold">
+					<h1 className="text-white sm:text-5xl text-3xl font-bold">
 						Movies4All
 					</h1>
 				</a>
@@ -16,6 +18,16 @@ const Navbar = () => {
 					<span className="blue-gradient">Diverse World</span> of
 					Movie Magic
 				</h2>
+
+				<ul className="text-white list-none flex items-center justify-center gap-2 flex-col sm:gap-12 sm:flex-row">
+					{lists.map((list) => (
+						<Link href={list.link} key={list.id}>
+							<li className="px-3 py-2 bg-gradient-to-r hover:from-[#56beff] hover:to-[#481eee] rounded-lg cursor-pointer font-medium border-2 bg-black">
+								{list.name}
+							</li>
+						</Link>
+					))}
+				</ul>
 			</nav>
 		</header>
 	);

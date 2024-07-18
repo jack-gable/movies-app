@@ -1,5 +1,5 @@
 "use client";
-import { fetchMovies } from "@/app/actions";
+import { fetchTopRatedMovies } from "@/app/actions";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -9,13 +9,13 @@ let page = 2;
 
 export type MovieCard = JSX.Element;
 
-function LoadMore() {
+function LoadMoreTopRated() {
 	const { ref, inView } = useInView();
 	const [data, setData] = useState<MovieCard[]>([]);
 
 	useEffect(() => {
 		if (inView) {
-			fetchMovies(page).then((res) => {
+			fetchTopRatedMovies(page).then((res) => {
 				setData([...data, ...res]);
 				page++;
 			});
@@ -42,4 +42,4 @@ function LoadMore() {
 	);
 }
 
-export default LoadMore;
+export default LoadMoreTopRated;

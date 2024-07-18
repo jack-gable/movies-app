@@ -1,9 +1,9 @@
-import { fetchPlayingMovies } from "./actions";
+import { fetchPopularMovies } from "../actions";
 import Image from "next/image";
-import LoadMorePlaying from "@/components/LoadMorePlaying";
+import LoadMorePopular from "@/components/LoadMorePopular";
 
-async function Home() {
-	const data = await fetchPlayingMovies(1);
+async function Popular() {
+	const data = await fetchPopularMovies(1);
 
 	if (!data) {
 		return (
@@ -24,16 +24,16 @@ async function Home() {
 		<main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
 			<div className="flex justify-between items-center">
 				<h2 className="text-3xl text-white font-bold">
-					Explore Now Playing Movies
+					Explore Popular Movies
 				</h2>
 			</div>
 
 			<section className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
 				{data}
 			</section>
-			<LoadMorePlaying />
+			<LoadMorePopular />
 		</main>
 	);
 }
 
-export default Home;
+export default Popular;
