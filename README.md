@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movies4All
 
-## Getting Started
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)]()
+![Node Current](https://img.shields.io/node/v/next)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fmovies-app-zeta-fawn.vercel.app%2F)
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Installation](#installation)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This movie app leverages the OpenMovieDB API to provide users with detailed information on a wide range of films. Users can find movies, view ratings, see descriptions, and more. The app offers a sleek, user-friendly interface that makes movie discovery and management seamless and enjoyable.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Website
 
-## Learn More
+[Movies4All](https://movies-app-zeta-fawn.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   Utilizes Framer-Motion to create realistic and seamless animations and transitions of movie content.
+-   Movies picked from the OpenMovieDatabase API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+-   Next.js
+-   React
+-   TypeScript
+-   TailwindCSS
+-   Framer-Motion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Prerequisites
+
+-   Must have React v18+
+
+### Steps
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/jack-gable/movies-app
+    ```
